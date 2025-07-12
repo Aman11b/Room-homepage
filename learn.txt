@@ -1,0 +1,41 @@
+const upperSlides = [
+  {
+    img: 'images/hero1.jpg',
+    title: 'Heading 1',
+    text: 'Description for slide 1'
+  },
+  {
+    img: 'images/hero2.jpg',
+    title: 'Heading 2',
+    text: 'Description for slide 2'
+  },
+  {
+    img: 'images/hero3.jpg',
+    title: 'Heading 3',
+    text: 'Description for slide 3'
+  }
+];
+
+
+let currentSlide = 0;
+
+function renderUpperSection(index) {
+  const data = upperSlides[index];
+  document.getElementById('upperImg').src = data.img;
+  document.getElementById('upperTitle').textContent = data.title;
+  document.getElementById('upperText').textContent = data.text;
+}
+
+// Initial load
+renderUpperSection(currentSlide);
+
+// Navigation
+document.getElementById('nextButton').addEventListener('click', () => {
+  currentSlide = (currentSlide + 1) % upperSlides.length;
+  renderUpperSection(currentSlide);
+});
+
+document.getElementById('prevButton').addEventListener('click', () => {
+  currentSlide = (currentSlide - 1 + upperSlides.length) % upperSlides.length;
+  renderUpperSection(currentSlide);
+});
