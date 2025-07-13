@@ -1,0 +1,44 @@
+
+// padding
+.padding-large{
+    padding: 5rem 2.5rem;
+}
+.padding-small{
+    padding: 2rem 1rem;
+}
+
+// background color
+.bg-white{
+    background:var(--clr-white);
+}
+.bg-grey500{
+    background: var(--clr-grey-500);
+}
+.bg-grey800{
+    background: var(--clr-Grey-800);
+}
+.bg-black{
+    background: var(--clr-Black);
+}
+
+// font weights
+.fw-500{
+    font-weight: var(--fw-500);
+}
+.fw-600{
+    font-weight: var(--fw-600);
+}
+.fw-700 {
+    font-weight: var(--fw-700);
+}
+
+// gap 
+.gap0{
+    gap: var(--gap0);
+}
+.gap1{
+    gap: var(--gap1);
+}
+.gap2 {
+    gap: var(--gap2);
+}
