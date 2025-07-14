@@ -1,7 +1,7 @@
 
 // padding
 .padding-large{
-    padding: 5rem 2.5rem;
+    padding: 3rem 1.5rem;
 }
 .padding-small{
     padding: 2rem 1rem;
@@ -19,6 +19,23 @@
 }
 .bg-black{
     background: var(--clr-Black);
+}
+
+// color
+.color-white {
+    color: var(--clr-white);
+}
+
+.color-grey500 {
+    color: var(--clr-grey-500);
+}
+
+.color-grey800 {
+    color: var(--clr-Grey-800);
+}
+
+.color-black {
+    color: var(--clr-Black);
 }
 
 // font weights
@@ -41,4 +58,15 @@
 }
 .gap2 {
     gap: var(--gap2);
+}
+
+// justify
+.align-center{
+    display: flex;
+    align-items: center;
+}
+.justify-center{
+    display: flex;
+    justify-content: center;
+
 }
