@@ -28,22 +28,20 @@
   </header>
   <main role="main" class="[ grid ]">
       <section data-type="upper" class="[ upperMain ] [ flex-row ]">
-      <div class="mainImage">
-        <img src="./images/desktop-image-hero-1.jpg" alt="Slide Image" id="imagae">
-      </div>
-      <div class="[ mainContent ] [ flex-col ] [ padding-large ]">
-        <div id="content" class="content">
-          <h1 id="title">Discover innovative ways to decorate</h1>
+      <img src="./images/desktop-image-hero-1.jpg" alt="Slide Image" id="imagae">
+      <div class="[ mainContent ] [ flex-col ] ">
+        <div id="content" class="[ content ]">
+          <h1 id="title" class="[ fs2h ]">Discover innovative ways to decorate</h1>
           <p id="text">  
             We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love.
           </p>
-          <button class="Shop-button">Shop now</button>
+          <button class="Shop-button">Shop now  <span class="btn-arrow"><svg width="40" height="12" xmlns="http://www.w3.org/2000/svg"><path d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" fill="#000" fill-rule="nonzero"/></svg></span></button>
         </div>
-        <div id="nav-buttons">
-        <button id="prev-btn" aria-label="Previous Slide">
+        <div id="nav-buttons" class="[ nav-buttons ][ flex-row ]" >
+        <button id="prev-btn" class="[ bg-black ]" aria-label="Previous Slide" data-type="hover">
           <img src="./images/icon-angle-left.svg" alt="previous btn">
         </button>
-        <button id="next-btn" aria-label="Next Slide">
+        <button id="next-btn" class="[ bg-black ]"  aria-label="Next Slide" data-type="hover">
           <img src="./images/icon-angle-right.svg" alt="next btn">
         </button>
       </div>
@@ -52,7 +50,7 @@
     </section >
     <section data-type="lower"  class="[ lowerMain ] [ flex-row ]">
       <img src="./images/image-about-dark.jpg" alt="Dark furniture">
-      <div class="[ lowerContent ][ padding-small ]">
+      <div class="[ lowerContent ]">
         <h2>About our furniture</h2>
         <p>
           Our multifunctional collection blends design and function to suit your individual taste.Make each room unique, or pick a cohesive theme that best express your interests and what inspires you. Find the furniture pieces you need, from traditional to contemporary styles or anything in between. Product specialists are available to help you create your dream space.

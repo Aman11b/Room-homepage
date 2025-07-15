@@ -1,0 +1,15 @@
+.lowerMain{
+    .lowerContent{
+        padding: 4rem 2.8rem;
+
+        h2{
+            letter-spacing: 0.5rem;
+            text-transform: uppercase;
+        }
+        p{
+            padding-top: 1rem;
+            color: var(--clr-grey-500);
+            text-align: start;
+        }
+    }
+}

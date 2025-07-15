@@ -1,19 +1,49 @@
+
 .upperMain{
-    width: 100vw;
+    // width: 100vw;
     .mainImage{
-        max-width: 75vw;
-    }
-    .mainContent{
-        max-width: 25vw;
-        
+        width: fit-content;
     }
 
     .mainContent{
-
+        justify-content: space-between;
+        position: relative;
 
         .content{
+            
+            padding: 9rem 5rem;
+            
+
+            #text{
+                padding: 1.6rem 0;
+                color: var(--clr-grey-500);
+                text-align:start;
+                padding-right: 1.5rem;
+            }
+
+            button{
+                background: transparent;
+                border: none;
+
+                color: var(--clr-grey-500);
+                text-transform:uppercase;
+                letter-spacing: 1em;
+                
+            }
 
         }
+
+        .nav-buttons{
+            position: absolute;
+            bottom: 0;
+            button{
+                padding: 2rem;
+                border: none;
+
+            }
+        }
     }
+
+
 }
 

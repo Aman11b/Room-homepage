@@ -1,10 +1,14 @@
-nav{
-    top: 2rem;
-    left: 2rem;
-    
+@use '../utils/' as u;
 
-    .logo{
-        background-size: cover;
+nav{
+    top: 3rem;
+    left: 4rem;
+
+    ul{
+        li{
+            @include u.hover-underline;
+        }
         
     }
+    
 }

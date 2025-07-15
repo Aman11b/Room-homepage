@@ -108,6 +108,10 @@ li>a {
     text-decoration: none;
 }
 
+button{
+    cursor: pointer;
+}
+
 .sr-only {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
@@ -135,3 +139,4 @@ li>a {
     }
 
 }
+

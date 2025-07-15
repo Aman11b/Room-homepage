@@ -13,8 +13,8 @@
         transition:  background-color 0.3s ease, width 0.3s ease;
     }
 
-    &:hover ::after{
-        background-color: var(--clr-grey-500);
-        width: 60%;
+    &:hover::after{
+        background-color: var(--clr-white);
+        width: 70%;
     }
 }
