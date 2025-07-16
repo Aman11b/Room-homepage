@@ -2,27 +2,23 @@
 @use '../utils/' as u;
 
 .upperMain{
-    // width: 100vw;
-    .mainImage{
-        width: fit-content;
+    @include u.breakpoint('tablet') {
+            flex-direction: column;
+    
     }
 
     .mainContent{
         justify-content: space-between;
         position: relative;
 
-
         .content{
-            
             padding: 9rem 5rem;
-            
-
+        
             #text{
                 padding: 1.6rem 0;
                 color: var(--clr-grey-500);
                 text-align:start;
                 padding-right: 1.5rem;
-
                 
             }
             h1 {
@@ -41,27 +37,9 @@
             }
 
             @include u.breakpoint('tablet'){
-                padding: 8rem 4rem;
-                // padding-top: 8rem;
-                // width: fit-content;
-                #text{
-                    padding: 1rem;
-                    padding-right: 1rem;
-                    padding-left: 0;
-                }
-                h1{
-                    font-size: 2.6rem;
-                }
-
-                p{
-                    width: 40ch;
-                }
-                button {
-                    letter-spacing: 0.6em;
-                }
-
+                padding: 7rem 4rem 3rem 4rem;
+                
             }
-
         }
 
         .nav-buttons{
@@ -72,18 +50,13 @@
                 border: none;
 
             }
+
+            @include u.breakpoint('tablet'){
+                top: 0;
+                bottom: unset;
+            }
         }
 
-        @include u.breakpoint('tablet'){
-            .nav-buttons {
-                button {
-                    padding: 2rem;
-                }
-                }
-
-        }
     }
-
-
 }
 
