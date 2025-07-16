@@ -1,14 +1,38 @@
 @use '../utils/' as u;
 
-nav{
-    top: 3rem;
-    left: 4rem;
+header{
+    position: relative;
+    .nav-div{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // gap: 1rem;
 
-    ul{
-        li{
-            @include u.hover-underline;
+        top: 2rem;
+        left: 2rem;
+        nav {
+            position: relative;
+            ul {
+                li {
+                    @include u.hover-underline;
+                    
+                }
+                padding-left: 1rem;
+    
+            }
+        
+        }
+        .primary-navigation{
+            gap: 1rem;
         }
         
+        @include u.breakpoint('mobile'){
+            .primary-navigation{
+                display: flex;
+                gap: 1rem;
+            }
+        }
     }
-    
+
 }
