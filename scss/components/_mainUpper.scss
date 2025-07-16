@@ -1,4 +1,6 @@
 
+@use '../utils/' as u;
+
 .upperMain{
     // width: 100vw;
     .mainImage{
@@ -8,6 +10,7 @@
     .mainContent{
         justify-content: space-between;
         position: relative;
+
 
         .content{
             
@@ -19,16 +22,44 @@
                 color: var(--clr-grey-500);
                 text-align:start;
                 padding-right: 1.5rem;
+
+                
+            }
+            h1 {
+                font-size: 2rem;
             }
 
             button{
                 background: transparent;
                 border: none;
+                font-weight: var(--fw-700);
 
-                color: var(--clr-grey-500);
+                color: var(--clr-grey-600);
                 text-transform:uppercase;
                 letter-spacing: 1em;
                 
+            }
+
+            @include u.breakpoint('tablet'){
+                padding: 8rem 4rem;
+                // padding-top: 8rem;
+                // width: fit-content;
+                #text{
+                    padding: 1rem;
+                    padding-right: 1rem;
+                    padding-left: 0;
+                }
+                h1{
+                    font-size: 2.6rem;
+                }
+
+                p{
+                    width: 40ch;
+                }
+                button {
+                    letter-spacing: 0.6em;
+                }
+
             }
 
         }
@@ -41,6 +72,15 @@
                 border: none;
 
             }
+        }
+
+        @include u.breakpoint('tablet'){
+            .nav-buttons {
+                button {
+                    padding: 2rem;
+                }
+                }
+
         }
     }
 

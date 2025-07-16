@@ -1,3 +1,5 @@
+@use '../utils/' as u;
+
 .lowerMain{
     .lowerContent{
         padding: 4rem 2.8rem;
@@ -11,5 +13,22 @@
             color: var(--clr-grey-500);
             text-align: start;
         }
+
+        @include u.breakpoint('tablet') {
+            padding: 4rem;
+        
+            h2 {
+                letter-spacing: 0.3rem;
+                text-transform: uppercase;
+                
+            }
+        
+            p {
+                
+                width:40ch;
+                padding-right: 1rem;
+            }
+        }
     }
+    
 }
