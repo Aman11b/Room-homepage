@@ -1,15 +1,21 @@
 @use '../utils/' as u;
 
 .lowerMain{
-    @include u.breakpoint('tablet'){
+    @include u.breakpoint('large'){
+        flex-direction: column;
         img {
-                width: 50vw; // same width for both images
-                aspect-ratio: 1.5/1;
+            width: 50vw; // same width for both images
+            aspect-ratio: 1.5/1;
         }
-    
+    }
+    @include u.breakpoint('small'){
+        img{
+            width: 100vw;
+        }
     }
     .lowerContent{
-        padding: 4rem 2.8rem;
+        padding: 4rem 3rem;
+        
         h2{
             letter-spacing: 0.5rem;
             text-transform: uppercase;
@@ -18,9 +24,10 @@
             padding-top: 1rem;
             color: var(--clr-grey-500);
             text-align: start;
+            
         }
 
-        @include u.breakpoint('tablet') {
+        @include u.breakpoint('large') {
             // margin-right: 0; // ✅ align to left edge
             padding: 0 0;
             padding-top: 2rem;
