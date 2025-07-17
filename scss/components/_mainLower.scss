@@ -41,7 +41,7 @@
         }
     }
 
-    @include u.breakpoint('tablet'){
+    @include u.breakpoint('small'){
         flex-direction: column;
     }
     

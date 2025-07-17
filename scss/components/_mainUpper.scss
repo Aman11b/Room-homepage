@@ -2,7 +2,7 @@
 @use '../utils/' as u;
 
 .upperMain{
-    @include u.breakpoint('tablet') {
+    @include u.breakpoint('large') {
             flex-direction: column;
     
     }
@@ -36,7 +36,7 @@
                 
             }
 
-            @include u.breakpoint('tablet'){
+            @include u.breakpoint('large'){
                 padding: 7rem 4rem 3rem 4rem;
                 
             }
@@ -51,7 +51,7 @@
 
             }
 
-            @include u.breakpoint('tablet'){
+            @include u.breakpoint('large'){
                 top: 0;
                 bottom: unset;
             }
