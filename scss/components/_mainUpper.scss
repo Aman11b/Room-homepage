@@ -3,8 +3,10 @@
 
 .upperMain{
     @include u.breakpoint('large') {
-            flex-direction: column;
-    
+        flex-direction: column;
+    }
+    @include u.breakpoint('small'){
+        flex-direction: column;
     }
 
     .mainContent{
@@ -37,8 +39,10 @@
             }
 
             @include u.breakpoint('large'){
-                padding: 7rem 4rem 3rem 4rem;
-                
+                padding: 7rem 4rem 3rem 4rem; 
+            }
+            @include u.breakpoint('small'){
+                padding: 3rem 2rem;
             }
         }
 
@@ -48,6 +52,9 @@
             button{
                 padding: 2rem;
                 border: none;
+                @include u.breakpoint('small'){
+                    padding: 1rem;
+                }
 
             }
 
@@ -55,7 +62,13 @@
                 top: 0;
                 bottom: unset;
             }
+            @include u.breakpoint('small'){
+                top: -3.5rem;
+                right: 0;
+            }
         }
+
+
 
     }
 }
