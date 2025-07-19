@@ -41,28 +41,31 @@
   </header>
   <main role="main" class="[ grid ]">
       <section data-type="upper" class="[ upperMain ] [ flex-row ]">
-      <img src="./images/desktop-image-hero-1.jpg" alt="Slide Image" id="imagae">
-      <div class="[ mainContent ] [ flex-col ] ">
-        <div id="content" class="[ content ]">
-          <h1 id="title" class="[  ]">Discover innovative ways to decorate</h1>
-          <p id="text">  
-            We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love.
-          </p>
-          <button class="Shop-button">Shop now  <span class="btn-arrow"><svg width="40" height="12" xmlns="http://www.w3.org/2000/svg"><path d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" fill-rule="nonzero"/></svg></span></button>
+        <div class="imageDiv">
+          <img src="./images/desktop-image-hero-1.jpg" alt="Slide Image" id="imagae">
         </div>
-        <div id="nav-buttons" class="[ nav-buttons ][ flex-row ]" >
-        <button id="prev-btn" class="[ bg-black ]" aria-label="Previous Slide" data-type="hover">
-          <img src="./images/icon-angle-left.svg" alt="previous btn">
-        </button>
-        <button id="next-btn" class="[ bg-black ]"  aria-label="Next Slide" data-type="hover">
-          <img src="./images/icon-angle-right.svg" alt="next btn">
-        </button>
-      </div>
-      </div>
-      
+        <div class="[ mainContent ] [ flex-col ] ">
+          <div id="content" class="[ content ]">
+            <h1 id="title" >Discover innovative ways to decorate</h1>
+            <p id="text">  
+              We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love.
+            </p>
+            <button class="Shop-button">Shop now  <span class="btn-arrow"><svg width="40" height="12" xmlns="http://www.w3.org/2000/svg"><path d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" fill-rule="nonzero"/></svg></span></button>
+          </div>
+          <div id="nav-buttons" class="[ nav-buttons ][ flex-row ]" >
+            <button id="prev-btn" class="[ bg-black ]" aria-label="Previous Slide" data-type="hover">
+              <img src="./images/icon-angle-left.svg" alt="previous btn">
+            </button>
+            <button id="next-btn" class="[ bg-black ]"  aria-label="Next Slide" data-type="hover">
+              <img src="./images/icon-angle-right.svg" alt="next btn">
+            </button>
+          </div>
+        </div>
     </section >
     <section data-type="lower"  class="[ lowerMain ] [ flex-row ]">
-      <img src="./images/image-about-dark.jpg" alt="Dark furniture" class="firstImage">
+      <div class="firstImage">
+        <img src="./images/image-about-dark.jpg" alt="Dark furniture" >
+      </div>
       <div class="[ lowerContent ][ flex-col ]">
         <div>
           <h2>About our furniture</h2>
@@ -71,7 +74,9 @@
           </p>
         </div>
       </div>
-      <img src="./images/image-about-light.jpg" alt="Light furniture" class="secondImage">
+      <div class="secondImage">
+        <img src="./images/image-about-light.jpg" alt="Light furniture" >
+      </div>
     </section>
   </main>
   <script src="./main.js" defer></script>
