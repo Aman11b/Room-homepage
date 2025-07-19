@@ -35,6 +35,7 @@ body {
     line-height: 1.5;
     text-rendering: optimizeSpeed;
     font-family: inherit;
+    font-size: clamp(0.625rem, 0.1563rem + 1.5vw, 1rem) !important;
 }
 
 
@@ -121,6 +122,8 @@ button{
     white-space: nowrap;
     width: 1px
 }
+
+
 
 /* remove all animation,transition */
 

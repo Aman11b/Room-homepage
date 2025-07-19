@@ -1,6 +1,18 @@
 @use '../utils/' as u;
 
 .lowerMain{
+
+    @include u.breakpoint('large'){
+        font-size: 0.7rem;
+    }
+    @include u.breakpoint('medium') {
+        flex-direction: column;
+        height: fit-content;
+    }
+    @include u.breakpoint('small') {
+        width: 100%;
+        // height: fit-content;
+    }
     height: 30vh;
     img{
         width: 100%;
@@ -8,86 +20,49 @@
     }
     .firstImage,
     .secondImage{
-        width: 25%; 
+
+        @include u.breakpoint('medium'){
+            width: 50%;
+        }
+        @include u.breakpoint('small') {
+            min-width: 100%;
+        }
+        width: 25%;
     }
     .lowerContent{
-        max-width: 50%;
+        
+        
+        @include u.breakpoint('medium'){
+            display: flex;
+            flex-direction: column;
+            margin-left: auto;
+        }
+        @include u.breakpoint('small') {
+            width: 100%;
+            padding: 2rem 1.4rem;
+        }
+        width: 50%;
         display: grid;
         height: 100%;
         place-items: center;
+        padding: 0.8rem;
 
-        padding-inline: 2rem;
+        padding-inline: 1.2rem;
         h2{
             letter-spacing: 0.5rem;
             text-transform: uppercase;
+            font-size: 1rem;
+
+            @include u.breakpoint('small'){
+                letter-spacing: 0;
+            }
         }
         p{
-            padding-top: 1rem;
+            padding-top: 0.5rem;
             color: var(--clr-grey-500);
             text-align: start;
             width: 100%;
-
+            height: 100%;
         }
-
-
     }
 }
-
-// .lowerMain{
-//     @include u.breakpoint('large'){
-//         flex-direction: column;
-//         div{
-//             width: 30vw;
-//             height: fit-content;
-//         }
-//         img {
-//             width: 30vh; // same width for both images
-//             aspect-ratio: 1;
-//         }
-//     }
-//     @include u.breakpoint('small'){
-//         img{
-//             width: 100vw;
-//         }
-//     }
-//     .lowerContent{
-//         padding: 4rem 2rem;
-        
-//         h2{
-//             letter-spacing: 0.5rem;
-//             text-transform: uppercase;
-//         }
-//         p{
-//             padding-top: 1rem;
-//             color: var(--clr-grey-500);
-//             text-align: start;
-//             width: 100%;
-            
-//         }
-
-//         @include u.breakpoint('large') {
-//             // margin-right: 0; // ✅ align to left edge
-//             padding: 0 0;
-//             padding-top: 2rem;
-//             padding-bottom: 2rem;
-//             // justify-content: end;
-//             align-items: end;
-            
-//             h2 {
-//                 letter-spacing: 0.3rem;
-//                 text-transform: uppercase;
-//             }
-        
-//             p {
-                
-//                 width:40ch;
-//                 padding-right: 1rem;
-//             }
-//         }
-//     }
-
-//     @include u.breakpoint('small'){
-//         flex-direction: column;
-//     }
-    
-// }
