@@ -423,6 +423,11 @@ header .primary-header {
   color: var(--clr-grey-600);
   text-transform: uppercase;
   letter-spacing: 1em;
+  fill: var(--clr-grey-600);
+}
+.upperMain .mainContent .content button:hover {
+  color: var(--clr-grey-500);
+  fill: var(--clr-grey-500);
 }
 @media (max-width: 56.25em) {
   .upperMain .mainContent .content {
