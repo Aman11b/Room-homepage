@@ -37,8 +37,13 @@
                 color: var(--clr-grey-600);
                 text-transform:uppercase;
                 letter-spacing: 1em;
-                
+                fill: var(--clr-grey-600);
+                &:hover{
+                    color: var(--clr-grey-500);
+                    fill: var(--clr-grey-500);
+                }
             }
+            
 
             @include u.breakpoint('large'){
                 padding: 7rem 4rem 3rem 4rem; 
